@@ -1,0 +1,48 @@
+const lessons = [
+    // CSS mavzulari
+    { title: "CSS Asoslari", path: "css-themes/theme-01/index.html" },
+    { title: "Matn Formatlash", path: "css-themes/theme-02/index.html" },
+    { title: "Ranglar bilan ishlash", path: "css-themes/theme-03/index.html" },
+    { title: "Box Model", path: "css-themes/theme-04/index.html" },
+    { title: "Margin va Padding", path: "css-themes/theme-05/index.html" },
+    { title: "Border xususiyatlari", path: "css-themes/theme-06/index.html" },
+    { title: "Display: Block va Inline", path: "css-themes/theme-07/index.html" },
+    { title: "Flexbox asoslari", path: "css-themes/theme-08/index.html" },
+    { title: "Grid tizimi", path: "css-themes/theme-09/index.html" },
+    { title: "Pozitsiyalar (position)", path: "css-themes/theme-10/index.html" },
+    { title: "Float va Clear", path: "css-themes/theme-11/index.html" },
+    { title: "Background xususiyatlari", path: "css-themes/theme-12/index.html" },
+    { title: "Fonts bilan ishlash", path: "css-themes/theme-13/index.html" },
+    { title: "Transform va Transition", path: "css-themes/theme-14/index.html" },
+    { title: "Animatsiyalar", path: "css-themes/theme-15/index.html" },
+    { title: "Shadows (soyalar)", path: "css-themes/theme-16/index.html" },
+    { title: "Responsive Design", path: "css-themes/theme-17/index.html" },
+    { title: "Media Queries", path: "css-themes/theme-18/index.html" },
+    { title: "Custom Properties", path: "css-themes/theme-19/index.html" },
+    { title: "CSS Frameworks (Bootstrap)", path: "css-themes/theme-20/index.html" },
+
+    // JavaScript mavzulari
+    { title: "JS Asoslari", path: "js-themes/theme-01/index.html" },
+    { title: "O'zgaruvchilar va Ma'lumot turlari", path: "js-themes/theme-02/index.html" },
+    { title: "If-Else Shartlari", path: "js-themes/theme-03/index.html" },
+    { title: "For va While Cycles", path: "js-themes/theme-04/index.html" },
+    { title: "Funksiyalar", path: "js-themes/theme-05/index.html" },
+    { title: "Eventlar bilan ishlash", path: "js-themes/theme-06/index.html" },
+    { title: "DOM Manipulyatsiyasi", path: "js-themes/theme-07/index.html" },
+    { title: "Array va Object", path: "js-themes/theme-08/index.html" },
+    { title: "LocalStorage bilan ishlash", path: "js-themes/theme-09/index.html" },
+    { title: "JSON ma'lumotlar", path: "js-themes/theme-10/index.html" },
+    { title: "Asinxron Kodlar (Promises)", path: "js-themes/theme-11/index.html" },
+    { title: "Fetch API", path: "js-themes/theme-12/index.html" },
+    { title: "Form Validation", path: "js-themes/theme-13/index.html" },
+    { title: "Taymerlar (setTimeout, setInterval)", path: "js-themes/theme-14/index.html" },
+    { title: "JavaScript Animatsiyalar", path: "js-themes/theme-15/index.html" },
+    { title: "Error Handling", path: "js-themes/theme-16/index.html" },
+    { title: "ES6 Sintaksisi", path: "js-themes/theme-17/index.html" },
+    { title: "Modullar bilan ishlash", path: "js-themes/theme-18/index.html" },
+    { title: "Classlar va OOP", path: "js-themes/theme-19/index.html" },
+    { title: "Browser API bilan ishlash", path: "js-themes/theme-20/index.html" },
+], lessonContainer = document.getElementById("lesson-container"); lessons.forEach(((e, t) => {
+    const s = document.createElement("div"); s.className = "col-md-6 col-lg-4"; const n = `\n                                                          <div class="card shadow-sm">\n
+    <div class="iframe-container">                                                              <iframe src="${e.path}" loading="lazy"></iframe>\n </div>                                                                     <div class="card-body">\n                                                                              <h5 class="card-title">${e.title}</h5>\n                                                                                      <a href="${e.path}" target="_blank" class="btn btn-primary">Darsni ochish</a>\n                                                                                            </div>\n                                                                                                </div>\n                                                                                                  `; s.innerHTML = n, lessonContainer.appendChild(s)
+}));

@@ -1,0 +1,27 @@
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.iframe-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.iframe-container iframe {
+    width: 200%;
+    height: 200%;
+    border: none;
+    transform: scale(0.5);
+    /* Masshtabni 50% ga o'zgartiradi */
+    transform-origin: top left;
+    /* Boshlanish nuqtasini belgilaydi */
+}
+}
